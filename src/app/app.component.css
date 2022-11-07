@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+    background-color: #3287c1;
+    background-size:contain;
+    font: normal 15pt arial;
+    width: auto;
+    height: fit-content;
+
+}
+header{
+    text-align: center;
+}
+h1{
+    
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: rgb(148, 148, 148) 1px 0 10px;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562)
+
+}
+
+.dds_button{
+    background-color: #3287c1;
+    
+
+
+    
+    
+}
+
+.dds__button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15pt;
+    font-family: 'Anton', sans-serif;
+    margin: 10px;
+    
+}
+
+
+select{
+    width: 150px;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+.funcoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dds__button--mini-cadastro{
+    background-color: #3287c1 ;
+}
+
+.dds__button--mini-procurar{
+    background-color: #008000 ;
+}
+
+.dds__button--mini-deletar{
+    background-color: #ff0000;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://dds.dell.com/components/2.19.1/css/dds-fonts.min.css" />
+    <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.19.0/css/dds-reboot.min.css" />
+    <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.19.0/css/dds-fonts.min.css" />
+    <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.19.0/css/dds-icons.min.css" />
+    <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.19.0/css/dds-helpers.min.css" />
+    <link rel="stylesheet" crossorigin href="https://dds.dell.com/components/2.19.0/css/dds-main.min.css" />
+    <link rel="stylesheet" href="https://dds.dell.com/components/2.19.1/css/dds-reboot.min.css" />
+    
+
+
+</head>
+<body>
+    <header>
+      <h1>Cadastre seu carro</h1>   
+    
+    </header>
+    
+    <section>
+      <div class="funcoes">
+        <button class="dds__button dds__button--mini-cadastro" type="button" (click)="funcoes = 'cadastrar'">Cadastrar</button>
+        <div id="text-input-error-52" class="dds__invalid-feedback">Error Message</div>
+        <button class="dds__button dds__button--mini-procurar" type="button"(click)="funcoes = 'procurar'">Procurar</button>
+        <button class="dds__button dds__button--mini-deletar" type="button"(click)="funcoes = 'excluir'">Excluir</button></div>
+      <app-cadastrar *ngIf="funcoes == 'cadastrar'"></app-cadastrar>
+      <app-pesquisar *ngIf="funcoes == 'procurar'"></app-pesquisar>
+      <app-excluir *ngIf="funcoes == 'excluir'"></app-excluir>
+    </section>
+
+    <footer>Isabele Oliveira</footer>
+    <script src="https://dds.dell.com/components/2.19.0/js/index.min.js"></script>
+</body>
+</html>
